@@ -207,3 +207,26 @@ nav ul li a {
     font-style: italic;
 }
 
+.about-me-my-description{
+    margin: 25px;
+    font-weight: lighter;
+    font-size: 15px;
+}
+#about-me-gallery-tittle {
+    display: flex;
+    align-items: center; /* Aligns items vertically */
+    gap: 10px; /* Adjusts spacing */
+    font-size: 15px; /* Adjust as needed */
+    font-family: monospace; /* Matches the style */
+    color: white; /* Adjust text color */
+}
+
+#about-me-gallery-tittle hr {
+    flex-grow: 1; /* Expands the hr to fill space */
+    border: none;
+    border-top: 1px solid white; /* Line color */
+    margin:20px;
+    left: 10px;
+    right: 20px;
+}
+/*////////////////gallery//////////////*/
