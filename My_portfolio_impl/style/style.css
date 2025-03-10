@@ -34,6 +34,11 @@ body {
     height: 100vh;
     overflow-y: auto; /* Enable vertical scrolling */
     padding: 10px;
+    position: relative;
+}
+
+body>#main-right-section>.right>.div-tittles{
+    position: relative;
 }
 
 #main-left-fixed-section>#main-name-div{
@@ -178,7 +183,7 @@ nav ul li a {
 }
 
 #About-Me-Profile{
-    position: sticky;
+    position: relative;
     border-radius: 50%;
     width: 150px;
     aspect-ratio: 1/1;
@@ -229,4 +234,72 @@ nav ul li a {
     left: 10px;
     right: 20px;
 }
+/*
+#main-right-section>#right>h1.div-tittles{
+    position: relative;
+}*/
+
 /*////////////////gallery//////////////*/
+.gallery {
+    position: relative;
+    --size: 180px;  /* Reduced size */
+    --gap: .3rem;
+    --grid-cols: var(--size) var(--size);
+    --grid-rows: var(--size) var(--size) var(--size);
+    --size-hover: calc(var(--size) * 1.5);
+    --size-not-hover: calc(var(--size) / 1.5);
+    --speed: 500ms;
+    padding: 30px;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 300px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: var(--grid-cols);
+    transition: var(--speed) ease-in-out;
+    gap: var(--gap);
+}
+
+.gallery > div {
+    height: 100px;
+    display: grid;
+    grid-template-rows: var(--grid-rows);
+    gap: var(--gap);
+    transition: var(--speed) ease-in-out;
+}
+
+.gallery > div > img {
+    width: var(--size);
+    height: var(--size);
+    object-fit: cover;
+    filter: sepia(75%);
+    transition: filter var(--speed);
+}
+
+.gallery > div > img:hover {
+    filter: sepia(0);
+}
+
+.gallery:has(> div:nth-child(1):hover) {
+    --grid-cols: var(--size-hover) var(--size-not-hover);
+}
+
+.gallery:has(> div:nth-child(2):hover) {
+    --grid-cols: var(--size-not-hover) var(--size-hover);
+}
+
+.gallery > div:has(> img:nth-child(1):hover) {
+    --grid-rows: var(--size-hover) var(--size-not-hover) var(--size-not-hover);
+}
+
+.gallery > div:has(> img:nth-child(2):hover) {
+    --grid-rows: var(--size-not-hover) var(--size-hover) var(--size-not-hover);
+}
+
+.gallery > div:has(> img:nth-child(3):hover) {
+    --grid-rows: var(--size-not-hover) var(--size-not-hover) var(--size-hover);
+}
