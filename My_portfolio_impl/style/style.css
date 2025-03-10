@@ -242,7 +242,7 @@ nav ul li a {
 /*////////////////gallery//////////////*/
 .gallery {
     position: relative;
-    --size: 180px;  /* Reduced size */
+    --size: 170px;  /* Reduced size */
     --gap: .3rem;
     --grid-cols: var(--size) var(--size);
     --grid-rows: var(--size) var(--size) var(--size);
@@ -302,4 +302,58 @@ nav ul li a {
 
 .gallery > div:has(> img:nth-child(3):hover) {
     --grid-rows: var(--size-not-hover) var(--size-not-hover) var(--size-hover);
+}
+
+/*////////////////////////////////////*/
+/*
+#gallery-keep-in-touch{
+    position: relative;
+  top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    gap: 100px;
+    !*display: flex;
+    align-items: center;  !* Aligns items properly *!
+    white-space: nowrap;  !* Prevents text wrapping *!*!
+}
+#gallery-keep-in-touch>h4{
+    display: inline-block;
+    white-space: nowrap;
+   !* align-items: center;*!
+    font-size: 10px;
+}
+
+#about-me-last-div{
+    height: 200px;
+    position: relative;
+}*/
+
+/*
+#about-me-discovery{
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    display: inline-block;
+}*/
+.container {
+    top: 30px;
+    margin-bottom: 100px;
+    position: relative;
+    flex-direction: column; /* Stacks elements vertically */
+    align-items: center;  /* Centers content */
+    gap: 50px; /* Adds spacing */
+    font-size: 12px;
+    display: inline-block;
+    font-weight: bolder;
+    color: black;
+}
+#about-me-discovery {
+    display: block;
+    margin-top: 50px; /* Adjust space below gallery */
+    text-align: center; /* Center text */
+    margin-bottom:80px;
 }
