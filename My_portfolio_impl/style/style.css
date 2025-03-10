@@ -346,14 +346,27 @@ nav ul li a {
     flex-direction: column; /* Stacks elements vertically */
     align-items: center;  /* Centers content */
     gap: 50px; /* Adds spacing */
-    font-size: 12px;
+    font-size: 15px;
     display: inline-block;
     font-weight: bolder;
     color: black;
 }
 #about-me-discovery {
-    display: block;
+    display: inline-block;
     margin-top: 50px; /* Adjust space below gallery */
     text-align: center; /* Center text */
     margin-bottom:80px;
+}
+
+#about-me-discovery>a>img{
+    display: inline-block;
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
 }
