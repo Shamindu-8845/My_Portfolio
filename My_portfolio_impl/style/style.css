@@ -47,8 +47,9 @@ body {
 
 /* Right Section Inner Divs */
 .right {
+    position: sticky;
     width: 100%;
-    height: 300px; /* Example height */
+    height: fit-content; /* Example height */
     background-color: black;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -170,7 +171,14 @@ nav ul li a {
 
 /*///////////////////////////////////////About-Me Section///////////////////////////////*/
 
+#main-right-section>div:nth-child(1){
+    position: sticky;
+    margin: 0;
+    padding: 0;
+}
+
 #About-Me-Profile{
+    position: sticky;
     border-radius: 50%;
     width: 150px;
     aspect-ratio: 1/1;
@@ -179,9 +187,23 @@ nav ul li a {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    position: relative;
     top: 5px;
     left: 10px;
     margin: 5px;
+    border: 5px solid white;
+}
+#main-right-section>div:nth-child(1)>h1{
+    position: sticky;
+    margin: 5px;
+    left: 5px;
+    top: 5px;
+}
+
+#main-right-section>div:nth-child(1)>h2{
+    font-size: 15px;
+    position: sticky;
+    margin: 20px;
+    font-weight: bolder;
+    font-style: italic;
 }
 
