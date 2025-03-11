@@ -425,13 +425,14 @@ nav ul li a {
     color: #fff;
 }
 
-/*#Skills-Section>div:nth-child(2){
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-}*/
-
+/*/////////////////Project Section CSS here//////////////////////*/
+.main-clm{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+.fade-in{
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
 
