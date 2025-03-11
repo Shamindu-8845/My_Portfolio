@@ -467,4 +467,35 @@ nav ul li a {
     margin: 0 10px;
     height: 20px;
 }
+/*/////////////Contact Section here/////////////////////*/
+#main-right-section>#Contacts-Section>.div-tittles{
+        display: block;
+        font-size: 1.17em;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+        unicode-bidi: isolate;
+}
+
+#iframe {
+    width: 100px;
+    aspect-ratio: 1/1;
+    overflow-clip-margin: content-box !important;
+    overflow: clip !important;
+    border-width: 10px;
+    margin: 50px;
+    padding: 50px;
+    position: relative;
+}
+
+.contact-container {
+    background-color: #262626;
+    border-radius: 20px;
+    padding: 10px;
+    overflow: hidden;
+    margin: 20px;
+    margin-bottom: 20vh;
+}
 
