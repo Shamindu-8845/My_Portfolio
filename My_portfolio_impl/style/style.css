@@ -436,13 +436,14 @@ nav ul li a {
     transform: translateY(0) !important;
 }
 .pro-card{
-    background-color: black;
+    background-color: #1b1b1b;
     aspect-ratio: 1/1;
     padding: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border-radius: 20px;
+    margin: 15px;
 }
 .attribute-text{
     color: #959595;
@@ -460,5 +461,10 @@ nav ul li a {
     rotate: 90deg;
     align-items: center;
     width: min-content;
+}
+.open-link{
+    filter: invert(1);
+    margin: 0 10px;
+    height: 20px;
 }
 
