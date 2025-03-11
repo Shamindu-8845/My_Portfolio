@@ -435,4 +435,13 @@ nav ul li a {
     opacity: 1 !important;
     transform: translateY(0) !important;
 }
+.pro-card{
+    background-color: black;
+    aspect-ratio: 1/1;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+}
 
