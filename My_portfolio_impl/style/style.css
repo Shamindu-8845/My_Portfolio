@@ -504,3 +504,10 @@ nav ul li a {
     margin: 20px;
 }
 /*//////////////////////////////////Footer div///////////////////////////////////////////////////*/
+
+#footer-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
