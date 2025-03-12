@@ -430,6 +430,8 @@ nav ul li a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 8px;
+    margin:10px;
+    bottom: 10px;
 }
 .fade-in{
     opacity: 1 !important;
@@ -479,15 +481,20 @@ nav ul li a {
         unicode-bidi: isolate;
 }
 
+.right>#Contacts-Section{
+    position: relative;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+}
+
 #iframe {
     width: 100px;
     aspect-ratio: 1/1;
-    overflow-clip-margin: content-box !important;
-    overflow: clip !important;
     border-width: 10px;
     margin: 50px;
     padding: 50px;
-    position: relative;
+    position: sticky;
 }
 
 .contact-container {
@@ -496,6 +503,5 @@ nav ul li a {
     padding: 10px;
     overflow: hidden;
     margin: 20px;
-    margin-bottom: 20vh;
 }
 
