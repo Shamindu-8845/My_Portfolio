@@ -269,11 +269,87 @@ nav ul li a {
     margin: auto;
 }
 #Education-Section>#education-main-div>.education{
-        background: red;
+    background: red;
     border: 1px solid black;
     position: relative;
+    display: grid;
 }
-
+#Education-Section>#education-main-div>.education>div{
+    width: 500px;
+    height: 100px;
+    background-color: black;
+    position: relative;
+}
+#Education-Section>#education-main-div>.education>#first-div:nth-child(1){
+    position: absolute;
+    margin: auto;
+}
+#Education-Section>#education-main-div>.education>#second-div{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+#Education-Section>#education-main-div>.education>#third-div{
+    position: absolute;
+    right: 0;
+    margin: auto;
+    justify-items: center;
+    justify-content: center;
+}
+#Education-Section>#education-main-div>.education>#third-div>h3{
+    font-size: 17px;
+    font-weight: bolder;
+    font-style: italic;
+}
+#Education-Section>#education-main-div>.education>#third-div>p{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    font-size: 15px;
+    margin: auto;
+    position: relative;
+}
+#Education-Section>#education-main-div>.education>#second-div>h3{
+    font-size: 17px;
+    font-weight: bolder;
+    font-style: italic;
+}
+#Education-Section>#education-main-div>.education>#second-div>p{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    font-size: 15px;
+    margin: auto;
+    position: relative;
+}
+#Education-Section>#education-main-div>.education>#first-div>h3{
+    font-size: 17px;
+    font-weight: bolder;
+    font-style: italic;
+}
+#Education-Section>#education-main-div>.education>#first-div>p{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    font-size: 15px;
+    margin: auto;
+    position: relative;
+}
 
 /*////////////////gallery//////////////*/
 .gallery {
