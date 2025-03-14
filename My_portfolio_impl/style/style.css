@@ -307,6 +307,33 @@ nav ul li a {
     justify-content: center;
     opacity: 100%;
 }*/
+
+#about-me-education-tittle {
+    display: flex;
+    align-items: center; /* Aligns items vertically */
+    gap: 10px; /* Adjusts spacing */
+    font-size: 15px; /* Adjust as needed */
+    font-family: monospace; /* Matches the style */
+    color: white; /* Adjust text color */
+}
+
+#about-me-education-tittle>hr{
+    flex-grow: 1; /* Expands the hr to fill space */
+    border: none;
+    border-top: 1px solid white; /* Line color */
+    margin:20px;
+    left: 10px;
+    right: 20px;
+}
+
+#Education-Section>#education>#first-div>img{
+    position: relative;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    margin: auto;
+}
+
 #Education-Section>#education-main-div>.education>#third-div{
     position: absolute;
     right: 0;
@@ -331,6 +358,21 @@ nav ul li a {
     margin: auto;
     position: relative;
     opacity: 70%;
+}
+#Education-Section>#education-main-div>.education>#first-div>a{
+    text-decoration: none;
+    color: inherit; /* Inherits the text color from the parent element */
+    opacity: 80%;
+}
+#Education-Section>#education-main-div>.education>#third-div>a{
+    text-decoration: none;
+    color: inherit; /* Inherits the text color from the parent element */
+    opacity: 80%;
+}
+#Education-Section>#education-main-div>.education>#second-div>a{
+    text-decoration: none;
+    color: inherit; /* Inherits the text color from the parent element */
+    opacity: 80%;
 }
 #Education-Section>#education-main-div>.education>#second-div>h3{
     font-size: 17px;
