@@ -7,6 +7,16 @@
 
 /* Main layout */
 body {
+   /* display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; !* Prevent full body scrolling *!
+    color: white;*/
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.main{
     display: flex;
     width: 100vw;
     height: 100vh;
@@ -16,7 +26,7 @@ body {
 
 /* Left Fixed Section */
 #main-left-fixed-section {
-    width: 50vw; /* 50% width */
+    width: 100vw; /* 50% width */
     background-color: black;
     height: 100vh;
     position: sticky;
@@ -29,7 +39,7 @@ body {
 
 /* Right Scrollable Section */
 #main-right-section {
-    width: 50vw; /* 50% width */
+    width: 100vw; /* 50% width */
     background-color: black;
     height: 100vh;
     overflow-y: auto; /* Enable vertical scrolling */
@@ -691,4 +701,45 @@ nav ul li a {
     background: url("/assets/images/programing-languages.png");
     width: fit-content;
     height: fit-content;
+}
+
+@media (max-width: 800px) {
+   .main{
+        position: relative;
+        display: grid;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        grid-template-columns: 1fr;
+        z-index: 1500;
+        background-color: lightblue;
+
+    }
+    #main-left-fixed-section{
+        position: sticky;
+        width: 100%;
+        height: fit-content;
+        /*top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;*/
+        z-index: 9999;
+    }
+    .main>#main-right-fixed-section{
+        position: relative;
+      /* grid-template-columns: 1fr;*/
+        width:100vw;
+        /*top: 100vh;*/
+        /*left: 0;
+        right: 0;
+        bottom: 0;*/
+        margin: auto;
+        z-index: 9999;
+    }
+    .right{
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
 }
