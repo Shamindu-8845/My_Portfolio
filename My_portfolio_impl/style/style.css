@@ -231,7 +231,7 @@ nav ul li a {
     font-weight: lighter;
     font-size: 15px;
 }
-#about-me-gallery-tittle {
+.about-me-gallery-tittle {
     display: flex;
     align-items: center; /* Aligns items vertically */
     gap: 10px; /* Adjusts spacing */
@@ -240,7 +240,7 @@ nav ul li a {
     color: white; /* Adjust text color */
 }
 
-#about-me-gallery-tittle hr {
+.about-me-gallery-tittle hr {
     flex-grow: 1; /* Expands the hr to fill space */
     border: none;
     border-top: 1px solid white; /* Line color */
@@ -250,12 +250,14 @@ nav ul li a {
 }
 /*/////////////////////////////////////////////Education/////////////////////*/
 #Education-Section{
-    height: 400px;
-    width: 800px;
+    height: fit-content;
+    width: fit-content;
     background: black;
     position: relative;
-    margin: auto;
+    margin: 10px;
     display: grid;
+   /* justify-content: center;
+    justify-items: center;*/
 }
 #Education-Section>h1{
     position: relative;
@@ -265,6 +267,12 @@ nav ul li a {
     font-weight: bolder;
 }
 
+/*.education{
+    width: 780px;
+    height: 300px;
+    position: relative;
+}*/
+
 #education-main-div{
     display: grid;
     grid-template-rows: repeat(3,1fr);
@@ -272,16 +280,16 @@ nav ul li a {
     width: 780px;
     height: 300px;
     position: relative;
-    top: 0;
+   /* top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    margin: auto;
+    margin: auto;*/
 }
 #Education-Section>#education-main-div>.education{
     background: black;
     position: relative;
-    display: grid;
+   /* display: grid;*/
 }
 #Education-Section>#education-main-div>.education>div{
     width: 500px;
@@ -319,6 +327,13 @@ nav ul li a {
 }*/
 
 #about-me-education-tittle {
+    /*display: flex;
+    align-items: center; !* Aligns items vertically *!
+    gap: 10px; !* Adjusts spacing *!
+    font-size: 15px; !* Adjust as needed *!
+    font-family: monospace; !* Matches the style *!
+    color: white; !* Adjust text color *!
+    width: 50vw;*/
     display: flex;
     align-items: center; /* Aligns items vertically */
     gap: 10px; /* Adjusts spacing */
@@ -327,13 +342,19 @@ nav ul li a {
     color: white; /* Adjust text color */
 }
 
-#about-me-education-tittle>hr{
-    flex-grow: 1; /* Expands the hr to fill space */
+ #Education-Section #about-me-education-tittle hr{
+   /* flex-grow: 1; !* Expands the hr to fill space *!
     border: none;
-    border-top: 1px solid white; /* Line color */
-    margin:20px;
-    left: 10px;
-    right: 20px;
+    border-top: 1px solid white; !* Line color *!
+    margin:20px;*/
+    /*left: 10px;
+    right: 20px;*/
+     flex-grow: 1; /* Expands the hr to fill space */
+     border: none;
+     border-top: 1px solid white; /* Line color */
+     margin:20px;
+     left: 10px;
+     right: 20px;
 }
 
 #Education-Section>#education>#first-div>img{
