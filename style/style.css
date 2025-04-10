@@ -512,6 +512,7 @@ nav ul li a {
     justify-content: space-between;
     border-radius: 20px;
     margin: 15px;
+    overflow: hidden;
 }
 .attribute-text{
     color: #959595;
@@ -844,6 +845,7 @@ textarea {
         justify-content: space-between;
         border-radius: 5px;
         margin: 5px;
+        overflow: hidden;
     }
 
     #Education-Section{
@@ -910,6 +912,7 @@ textarea {
         justify-content: space-between;
         border-radius: 1px;
         margin: 1px;
+        overflow: hidden;
     }
     .pro-card{
         background-color: #1b1b1b;
@@ -920,6 +923,7 @@ textarea {
         justify-content: space-between;
         border-radius: 2px;
         margin: 5px;
+        overflow: hidden;
     }
 
 }
@@ -944,6 +948,7 @@ textarea {
         justify-content: space-between;
         border-radius: 1px;
         margin: 1px;
+        overflow: hidden;
     }
     .pro-card{
         background-color: #1b1b1b;
@@ -954,6 +959,7 @@ textarea {
         justify-content: space-between;
         border-radius: 2px;
         margin: 5px;
+        overflow: hidden;
     }
 
     #about-me-discovery {
