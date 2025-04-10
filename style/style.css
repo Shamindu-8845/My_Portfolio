@@ -553,21 +553,100 @@ nav ul li a {
     height: fit-content;
 }
 
-#contact-frame {
-    width: 100px;
-    aspect-ratio: 1/1;
-    border-width: 10px;
-    margin: 50px;
-    padding: 50px;
-    position: sticky;
-}
-
 .contact-container {
     background-color: #262626;
     border-radius: 20px;
     padding: 10px;
-    overflow: hidden;
     margin: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #666;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: inherit;
+    background-color: #262626;
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.hint {
+    font-size: 12px;
+    color: #262626;
+    margin-top: 5px;
+}
+
+.send-button {
+    background-color: #262626;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+
+    /* Modern shadow effect */
+    box-shadow: 0 4px 6px -1px rgba(79, 70, 229, 0.2),
+    0 2px 4px -1px rgba(79, 70, 229, 0.06);
+
+    /* Smooth transitions */
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.warning-container {
+    text-align: center;
+    background: #262626;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    max-width: 200px;
+}
+
+.send-button {
+    width: 150px;
+    height: 50px;
+    background-color: #3b3b3b;
+    color: white;
+    border: 1px;
+    padding: 10px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.send-button:hover {
+    background-color: #424242;
 }
 /*//////////////////////////////////Footer div///////////////////////////////////////////////////*/
 
