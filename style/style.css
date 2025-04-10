@@ -1,11 +1,10 @@
-/* Reset styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Main layout */
+
 body {
    /* display: flex;
     width: 100vw;
@@ -20,7 +19,7 @@ body {
     display: flex;
     width: 100vw;
     height: 100vh;
-    overflow: hidden; /* Prevent full body scrolling */
+    overflow: hidden;
     color: white;
     position: relative;
 }
@@ -43,9 +42,10 @@ body {
     width: 100vw; /* 50% width */
     background-color: black;
     height: 100vh;
-    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-y: auto;
     padding: 10px;
     position: relative;
+    /*border: 1px solid #ccc;*/
 }
 
 body>#main-right-section>.right>.div-tittles{
@@ -234,17 +234,17 @@ nav ul li a {
 }
 .about-me-gallery-tittle {
     display: flex;
-    align-items: center; /* Aligns items vertically */
-    gap: 10px; /* Adjusts spacing */
-    font-size: 15px; /* Adjust as needed */
-    font-family: monospace; /* Matches the style */
-    color: white; /* Adjust text color */
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-family: monospace;
+    color: white;
 }
 
 .about-me-gallery-tittle hr {
-    flex-grow: 1; /* Expands the hr to fill space */
+    flex-grow: 1;
     border: none;
-    border-top: 1px solid white; /* Line color */
+    border-top: 1px solid white;
     margin:20px;
     left: 10px;
     right: 20px;
@@ -321,7 +321,7 @@ nav ul li a {
     justify-content: center;
     justify-items: center;
     position: relative;
-    --size: 120px;  /* Reduced size */
+    --size: 120px;
     --gap: .2rem;
     --grid-cols: var(--size)  var(--size) var(--size);
     --grid-rows: var(--size) var(--size);
@@ -390,9 +390,9 @@ nav ul li a {
     top: 30px;
     margin-bottom: 100px;
     position: relative;
-    flex-direction: column; /* Stacks elements vertically */
-    align-items: center;  /* Centers content */
-    gap: 50px; /* Adds spacing */
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
     font-size: 15px;
     display: inline-block;
     font-weight: bolder;
@@ -421,7 +421,7 @@ nav ul li a {
     overflow-y: auto;
     padding: 20px;
     border-radius: 10px;
-    background-color: black; /* Slightly lighter background */
+    background-color: black;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -433,42 +433,42 @@ nav ul li a {
 #Skills-Section h1.div-tittles {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: white; /* Accent color for the title */
+    color: white;
 }
 
 #Skills-Section .skill-item {
     border: 2px solid white;
     width: 600px;
-    height: auto; /* Adjust height automatically */
+    height: auto;
     margin: 20px;
     padding: 20px;
     position: relative;
-    background-color: #3a3a3a; /* Darker background for skill items */
+    background-color: #3a3a3a;
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 #Skills-Section .skill-item:hover {
-    transform: translateY(-10px); /* Lift the card on hover */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 #Skills-Section .skill-item h2 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    color: white; /* Accent color for skill titles */
+    color: white;
 }
 
 #Skills-Section .skill-item p {
     font-size: 1rem;
-    color: #ccc; /* Lighter text for descriptions */
+    color: #ccc;
     width: 100%;
 }
 
 /* Progress Bar Styles */
 .progress-bar {
     width: 100%;
-    background-color: #555; /* Background color of the progress bar */
+    background-color: #555;
     border-radius: 5px;
     margin: 10px 0;
     overflow: hidden;
@@ -476,16 +476,16 @@ nav ul li a {
 
 .progress {
     height: 10px;
-    background-color: #ff6f61; /* Progress bar color */
+    background-color: #ff6f61;
     border-radius: 5px;
-    transition: width 0.5s ease; /* Smooth transition for progress */
+    transition: width 0.5s ease;
 }
 
 /* Skill Labels with Icons */
 #Skills-Section .skill-item p span {
-    display: inline-flex; /* Use flexbox for alignment */
-    align-items: center; /* Vertically center the text and icon */
-    gap: 8px; /* Space between text and icon */
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
     margin-top: 10px;
     font-size: 0.9rem;
     color: #fff;
