@@ -837,6 +837,7 @@ textarea {
     .pro-card{
         background-color: #1b1b1b;
         aspect-ratio: 1/1;
+        width: 300px;
         padding: 5px;
         display: flex;
         flex-direction: column;
@@ -902,6 +903,7 @@ textarea {
     .pro-card{
         background-color: #1b1b1b;
         aspect-ratio: 1/1;
+        width: 350px;
         padding: 1px;
         display: flex;
         flex-direction: column;
@@ -935,6 +937,7 @@ textarea {
     .pro-card{
         background-color: #1b1b1b;
         aspect-ratio: 1/1;
+        width: 350px;
         padding: 1px;
         display: flex;
         flex-direction: column;
