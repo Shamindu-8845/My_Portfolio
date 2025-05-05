@@ -674,7 +674,7 @@ textarea {
         grid-template-columns: 1fr;
         z-index: 1500;
         background-color: lightblue;
-
+        overflow: hidden;
     }
     #main-left-fixed-section{
         position: sticky;
@@ -686,6 +686,7 @@ textarea {
         bottom: 0;
         margin: auto;*/
         z-index: 9999;
+        overflow: hidden;
     }
     .main>#main-right-fixed-section{
         position: relative;
@@ -697,6 +698,7 @@ textarea {
         bottom: 0;*/
         margin: auto;
         z-index: 9999;
+        overflow: hidden;
     }
     .right{
         position: relative;
