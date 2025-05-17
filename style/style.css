@@ -540,45 +540,48 @@ nav ul li a {
 /*///////////////////Assignment Section/////////////////*/
 #assignment-section {
     max-height: fit-content;
-    overflow-y: auto;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: black;
+    border-radius: 16px;
+    border: 1px solid white;
+   /* background: linear-gradient(135deg, #1b1b1b 0%, #1b1b1b 100%);*/
     width: 100%;
     position: relative;
-    border: white 1px solid;
+   /* border: 1px solid rgba(255, 255, 255, 0.1);*/
     overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
-.assign-heading {
-    display: flex;
-    justify-content: center;
+#assignment-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 20% 30%, rgba(0, 229, 238, 0.1) 0%, transparent 40%);
+    pointer-events: none;
 }
 
-.assign-heading span {
-    color: gray;
-    font-size: 0.8rem;
-    font-weight: 200;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    position: relative;
-}
-
-.assignment-heading {
+#assignment-tittle {
+    font-size: 30px;
+    font-weight: 700;
     color: white;
-    font-size: 50px;
-    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
     position: relative;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
+    display: inline-block;
+    width: 100%;
 }
 
-.assignment-heading span {
-    font-size: 50px;
-    background-image: linear-gradient(90deg, #00FFCC, #00E5EE, #00FFCC);
-    -webkit-background-clip: text;
-    color: transparent;
+#assignment-tittle::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+   /* background: linear-gradient(90deg, #00FFCC, #00E5EE);*/
+    border-radius: 2px;
 }
 
 .assignments-container {
@@ -586,73 +589,123 @@ nav ul li a {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    padding: 20px 50px;
+    padding: 20px 60px;
     position: relative;
 }
 
 .assignments-carousel {
     display: flex;
-    overflow-x: scroll;
-    gap: 20px;
+    overflow-x: auto;
+    gap: 30px;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    padding: 20px;
+    padding: 30px 20px;
     width: calc(100% - 140px);
-    scrollbar-width: none; /* Hide scrollbar for Firefox */
-    -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
 .assignments-carousel::-webkit-scrollbar {
     display: none;
 }
 
 .assignments-card {
     flex: 0 0 auto;
-    width: 300px;
-    height: 400px;
-    background-color: #09101a;
-    border-radius: 10px;
-    padding: 20px;
-    border: 3px solid gray;
+    width: 320px;
+    height: 420px;
+    background: linear-gradient(145deg, #1e1e1e 0%, #141414 100%);
+    border-radius: 12px;
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
     text-align: center;
-    transition: all 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
     scroll-snap-align: start;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.assignments-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0, 229, 238, 0.1) 0%, transparent 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 .assignments-card:hover {
-    border: 3px solid transparent;
-    border-image: linear-gradient(90deg, #00FFCC, #00E5EE, #00FFCC) 1;
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 229, 238, 0.2);
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0, 229, 238, 0.2);
+    border: 1px solid rgba(0, 229, 238, 0.3);
+}
+
+.assignments-card:hover::before {
+    opacity: 1;
+}
+
+.assignments-card a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
 }
 
 .assignments-card i {
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: #00E5EE;
-    position: relative;
-    bottom: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
+    transition: transform 0.3s ease;
+}
+
+.assignments-card:hover i {
+    transform: scale(1.1);
+    color: #00FFCC;
 }
 
 .assignments-card h3 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: white;
     margin-bottom: 20px;
+    font-weight: 600;
+    position: relative;
+}
+
+.assignments-card h3::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 2px;
+    background: #00E5EE;
+    transition: width 0.3s ease;
+}
+
+.assignments-card:hover h3::after {
+    width: 80px;
 }
 
 .assignments-card p {
     font-size: 1rem;
-    color: gray;
-    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
+    margin-top: 15px;
 }
 
 .nav-button {
-    background: linear-gradient(90deg, #00FFCC, #00E5EE, #00FFCC);
-    border: none;
+    background: rgba(30, 30, 30, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -660,21 +713,25 @@ nav ul li a {
     transition: all 0.3s ease;
     flex-shrink: 0;
     position: absolute;
-    z-index: 1;
+    z-index: 2;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .nav-button:hover {
-    background: transparent;
-    border: 2px solid #00E5EE;
-}
-
-.nav-button:hover i {
-    color: #00E5EE;
+    background: rgba(0, 229, 238, 0.2);
+    border: 1px solid rgba(0, 229, 238, 0.5);
+    transform: scale(1.1);
 }
 
 .nav-button i {
-    color: black;
+    color: #00E5EE;
+    font-size: 1.5rem;
     transition: color 0.3s ease;
+}
+
+.nav-button:hover i {
+    color: #00FFCC;
 }
 
 .previous-button {
@@ -685,44 +742,63 @@ nav ul li a {
     right: 20px;
 }
 
-/* Hide buttons when printing */
-@media print {
-    .nav-button {
-        display: none;
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .assignments-container {
+        padding: 20px 40px;
     }
-    .assignments-carousel {
-        overflow-x: visible;
-        flex-wrap: wrap;
-        justify-content: center;
+
+    .assignments-card {
+        width: 280px;
+        height: 380px;
     }
 }
 
 @media (max-width: 768px) {
+    #assignment-tittle {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
     .assignments-container {
         padding: 20px 10px;
     }
 
     .nav-button {
-        display: none;
+        width: 50px;
+        height: 50px;
+        display: none; /* Hide on mobile */
     }
 
     .assignments-carousel {
         width: 100%;
-        padding: 10px;
-        gap: 15px;
+        padding: 20px 10px;
+        gap: 20px;
     }
 
     .assignments-card {
-        width: 250px;
-        height: 350px;
+        width: 260px;
+        height: 360px;
+        padding: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    #assignment-section {
+        padding: 30px 15px;
     }
 
-    .assignment-heading {
-        font-size: 36px;
+    #assignment-tittle {
+        font-size: 1.8rem;
     }
 
-    .assignment-heading span {
-        font-size: 36px;
+    .assignments-card {
+        width: 240px;
+        height: 340px;
+    }
+
+    .assignments-card h3 {
+        font-size: 1.4rem;
     }
 }
 /*/////////////Contact Section here/////////////////////*/
