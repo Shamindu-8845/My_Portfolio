@@ -542,7 +542,7 @@ nav ul li a {
     max-height: fit-content;
     border-radius: 16px;
     border: 1px solid white;
-   /* background: linear-gradient(135deg, #1b1b1b 0%, #1b1b1b 100%);*/
+    /*background: linear-gradient(135deg, #1b1b1b 0%, #1b1b1b 100%);*/
     width: 100%;
     position: relative;
    /* border: 1px solid rgba(255, 255, 255, 0.1);*/
@@ -616,7 +616,7 @@ nav ul li a {
     background: linear-gradient(145deg, #1e1e1e 0%, #141414 100%);
     border-radius: 12px;
     padding: 30px;
-    border: 1px solid rgba(255, 255, 255, 0.05);
+  /*  border: 1px solid rgba(255, 255, 255, 0.05);*/
     text-align: center;
     transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
     scroll-snap-align: start;
@@ -632,7 +632,7 @@ nav ul li a {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(0, 229, 238, 0.1) 0%, transparent 100%);
+   /* background: linear-gradient(135deg, rgba(0, 229, 238, 0.1) 0%, transparent 100%);*/
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -666,7 +666,7 @@ nav ul li a {
 
 .assignments-card:hover i {
     transform: scale(1.1);
-    color: #00FFCC;
+    /*color: #00FFCC;*/
 }
 
 .assignments-card h3 {
@@ -682,16 +682,16 @@ nav ul li a {
     position: absolute;
     bottom: -10px;
     left: 50%;
-    transform: translateX(-50%);
+   /* transform: translateX(-50%);*/
     width: 40px;
     height: 2px;
-    background: #00E5EE;
+    background: white;
     transition: width 0.3s ease;
 }
 
-.assignments-card:hover h3::after {
+/*.assignments-card:hover h3::after {
     width: 80px;
-}
+}*/
 
 .assignments-card p {
     font-size: 1rem;
@@ -742,65 +742,7 @@ nav ul li a {
     right: 20px;
 }
 
-/* Responsive Design */
-@media (max-width: 1024px) {
-    .assignments-container {
-        padding: 20px 40px;
-    }
 
-    .assignments-card {
-        width: 280px;
-        height: 380px;
-    }
-}
-
-@media (max-width: 768px) {
-    #assignment-tittle {
-        font-size: 2rem;
-        margin-bottom: 30px;
-    }
-
-    .assignments-container {
-        padding: 20px 10px;
-    }
-
-    .nav-button {
-        width: 50px;
-        height: 50px;
-        display: none; /* Hide on mobile */
-    }
-
-    .assignments-carousel {
-        width: 100%;
-        padding: 20px 10px;
-        gap: 20px;
-    }
-
-    .assignments-card {
-        width: 260px;
-        height: 360px;
-        padding: 25px;
-    }
-}
-
-@media (max-width: 480px) {
-    #assignment-section {
-        padding: 30px 15px;
-    }
-
-    #assignment-tittle {
-        font-size: 1.8rem;
-    }
-
-    .assignments-card {
-        width: 240px;
-        height: 340px;
-    }
-
-    .assignments-card h3 {
-        font-size: 1.4rem;
-    }
-}
 /*/////////////Contact Section here/////////////////////*/
 #main-right-section>#Contacts-Section>.div-tittles{
         display: block;
@@ -1355,10 +1297,8 @@ textarea {
     }
 
     #about-me-discovery {
-        visibility: hidden; /* Element remains but is invisible */
+        visibility: hidden;
     }
-
-
 }
 @media (max-width:400px){
     #Skills-Section .skill-item {
@@ -1416,6 +1356,65 @@ textarea {
 @media (max-width:320px){
     #Skills-Section .skill-item {
         width: 220px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .assignments-container {
+        padding: 20px 40px;
+    }
+
+    .assignments-card {
+        width: 280px;
+        height: 380px;
+    }
+}
+
+@media (max-width: 768px) {
+    #assignment-tittle {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .assignments-container {
+        padding: 20px 10px;
+    }
+
+    .nav-button {
+        width: 50px;
+        height: 50px;
+        display: none;
+    }
+
+    .assignments-carousel {
+        width: 100%;
+        padding: 20px 10px;
+        gap: 20px;
+    }
+
+    .assignments-card {
+        width: 260px;
+        height: 360px;
+        padding: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    #assignment-section {
+        padding: 30px 15px;
+    }
+
+    #assignment-tittle {
+        font-size: 1.8rem;
+    }
+
+    .assignments-card {
+        width: 240px;
+        height: 340px;
+    }
+
+    .assignments-card h3 {
+        font-size: 1.4rem;
     }
 }
 
