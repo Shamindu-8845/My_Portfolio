@@ -296,61 +296,61 @@
                 </div>
 
                 <div class="assignments-container">
-                    <a href="#assignment-1" class="nav-button previous-button">
+                    <button type="button" aria-label="Previous Assignment" class="nav-button previous-button">
                         <i class="fa-solid fa-chevron-left"></i>
-                    </a>
+                    </button>
 
                     <div class="assignments-carousel">
-                        <div class="assignments-card" id="assignment-1">
+                        <div class="assignments-card">
                             <i class="fa-solid fa-pen-clip"></i>
                             <h3>Assignment 01</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris.</p>
                         </div>
-                        <div class="assignments-card" id="assignment-2">
+                        <div class="assignments-card">
                             <i class="fa-solid fa-pen-clip"></i>
                             <h3>Assignment 02</h3>
                             <p>Vivamus luctus urna sed urna ultricies ac tempor dui sagittis.</p>
                         </div>
-                        <div class="assignments-card" id="assignment-3">
+                        <div class="assignments-card">
                             <i class="fa-solid fa-pen-clip"></i>
                             <h3>Assignment 03</h3>
                             <p>In condimentum facilisis porta. Sed nec diam eu diam mattis viverra.</p>
                         </div>
-                        <div class="assignments-card" id="assignment-4">
+                        <div class="assignments-card">
                             <i class="fa-solid fa-pen-clip"></i>
                             <h3>Assignment 04</h3>
                             <p>Nulla facilisi. Nulla facilisi. Proin eu ligula ac sapien suscipit cursus.</p>
                         </div>
-                        <div class="assignments-card" id="assignment-5">
+                        <div class="assignments-card">
                             <i class="fa-solid fa-pen-clip"></i>
                             <h3>Assignment 05</h3>
                             <p>Quisque cursus, metus vitae pharetra auctor, sem massa mattis sem.</p>
                         </div>
-                        <div class="assignments-card" id="assignment-6">
+                        <div class="assignments-card">
                             <i class="fa-solid fa-pen-clip"></i>
                             <h3>Assignment 06</h3>
                             <p>Fusce pellentesque suscipit nibh. Proin gravida nibh vel velit auctor aliquet.</p>
                         </div>
-                        <div class="assignments-card" id="assignment-7">
+                        <div class="assignments-card">
                             <i class="fa-solid fa-pen-clip"></i>
                             <h3>Assignment 07</h3>
                             <p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum.</p>
                         </div>
-                        <div class="assignments-card" id="assignment-8">
+                        <div class="assignments-card">
                             <i class="fa-solid fa-pen-clip"></i>
                             <h3>Assignment 08</h3>
                             <p>Nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate.</p>
                         </div>
-                        <div class="assignments-card" id="assignment-9">
+                        <div class="assignments-card">
                             <i class="fa-solid fa-pen-clip"></i>
                             <h3>Assignment 09</h3>
                             <p>Cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus.</p>
                         </div>
                     </div>
 
-                    <a href="#assignment-9" class="nav-button next-button">
+                    <button type="button" aria-label="Next Assignment" class="nav-button next-button">
                         <i class="fa-solid fa-chevron-right"></i>
-                    </a>
+                    </button>
                 </div>
             </div>
 
